@@ -1,0 +1,29 @@
+---
+import Header from "../components/Header.astro"
+
+const {frontmatter} = Astro.props
+---
+
+
+<style is:global>
+
+html {
+margin: 0px;
+padding: 0px;
+margin-block: 0px;
+}
+
+p {
+overflow-wrap: break-word;
+word-break: break-all;
+
+}
+</style>
+
+
+<body style="width:100vw; margin:0px; padding-left:0px; width:100vw; font-family: Arial, Arial, Helvetica, sans-serif; font-size:50px"> 
+  <Header />
+  <div style="padding-top:0px; padding-left:1.5em; padding-right: 1em; width:100%; max-width: 100%; box-sizing: border-box; font-family: Arial, Arial, Helvetica, sans-serif; font-size:50px">
+    <slot />
+  </div>
+</body>
